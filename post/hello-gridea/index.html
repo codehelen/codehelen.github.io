@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hello Gridea | CodeHelen&#39;s Blog</title>
-<link rel="shortcut icon" href="http://codehelen.github.io/favicon.ico?v=1592890517450">
+<link rel="shortcut icon" href="http://codehelen.github.io/favicon.ico?v=1592891322518">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="http://codehelen.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Hello Gridea | CodeHelen&#39;s Blog - Atom Feed" href="http://codehelen.github.io/atom.xml">
@@ -11,14 +11,13 @@
 
 
 
-    <meta name="description" content="👏  欢迎使用 Gridea ！
-✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
-
-Github
-Gridea 主页
-示例网站
-特性👇
-📝  你可以使用最酷的 Markdo..." />
+    <meta name="description" content="MYSQL笔记
+1 初始
+1.1 什么是数据库（DataBase）
+数据库是一个长期存储在计算机内的，有组织的，有共享的，统一管理的数据集合。
+1.2 表
+数据库表示一系列二维数组的集合，用来存储数据和操作数据的逻辑结构。
+1.3 SQL语..." />
     <meta name="keywords" content="Gridea" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -28,7 +27,7 @@ Gridea 主页
       <div class="main-content">
         <div class="site-header">
   <a href="http://codehelen.github.io">
-  <img class="avatar" src="http://codehelen.github.io/images/avatar.png?v=1592890517450" alt="">
+  <img class="avatar" src="http://codehelen.github.io/images/avatar.png?v=1592891322518" alt="">
   </a>
   <h1 class="site-title">
     CodeHelen&#39;s Blog
@@ -88,7 +87,7 @@ Gridea 主页
                 2018-12-12
               </span>
               <span>
-                2 min read
+                4 min read
               </span>
               
                 <a href="http://codehelen.github.io/tag/gmugeDm2k/" class="post-tag">
@@ -101,36 +100,162 @@ Gridea 主页
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+                <h1 id="mysql笔记">MYSQL笔记</h1>
+<h1 id="1-初始">1 初始</h1>
+<h3 id="11-什么是数据库database">1.1 什么是数据库（DataBase）</h3>
+<p>数据库是一个长期存储在计算机内的，有组织的，有共享的，统一管理的数据集合。</p>
+<h3 id="12-表">1.2 表</h3>
+<p>数据库表示一系列二维数组的集合，用来存储数据和操作数据的逻辑结构。</p>
+<h3 id="13-sql语言的4个部分">1.3 SQL语言的4个部分</h3>
+<ol>
+<li><strong>数据定义语言（DDL）</strong>：DROP，CREATE，ALTER</li>
+<li><strong>数据操作语言（DML）</strong>：INSERT，UPDATE，DELETE</li>
+<li><strong>数据查询语言（DQL）</strong>：SELECT</li>
+<li><strong>数据控制语言（DCL）</strong>：GRANT,REVOKE,COMMIT,ROLLBACK</li>
+</ol>
+<h4 id="例如用sql创建一个student表">例如：用SQL创建一个student表</h4>
+<pre><code class="language-mysql">CREATE TABLE students(
+    student_id INT UNSIGNED,
+    name VARCHAR(30),
+    sex CHAR(1),
+    bitth DATE,
+    PRIMARY KEY (student_id)
+);
+</code></pre>
+<h4 id="下面来插入一条数据">下面来插入一条数据：</h4>
+<pre><code class="language-mysql">INSERT INTO students (student_id,`name`,sex,bitth) VALUES (41302101,'codehelen',1,'1996-12-01');
+</code></pre>
+<h4 id="查找数据">查找数据：</h4>
+<pre><code class="language-mysql">select * from students where student_id = 41302101;
+</code></pre>
+<h2 id=""></h2>
+<h1 id="2mysql数据库的基本操作">2.MySQL数据库的基本操作</h1>
+<p>在安装好mysql后，会自带一些数据库，可以使用指令来查看：</p>
+<pre><code class="language-mysql">SHOW DATABASES;
+</code></pre>
+<img src="https://gitee.com/helen1234/picgo/raw/master/20200522202439.png" style="zoom:80%;" />
+<h4 id="21数据库">2.1数据库</h4>
+<p>​	创建数据库是在系统磁盘上划分一块区域用于数据的存储和管理。如果管理员在设置权限的时候为用户创建了数据库，则可以直接使用。否则自己创建数据库。MySQL中创建数据库的基本SQL语法格式为：</p>
+<pre><code class="language-mysql">CREATE DATABASE codehelen_study;
+</code></pre>
+<div align="left">
+<img src="https://gitee.com/helen1234/picgo/raw/master/20200522203115.png" style="zoom:80%;" />
+</div>
+<blockquote>
+<p>使用<code>DROP DATABASE</code>命令时，需要谨慎，MySQL 没有提示，且不会有确认信息，删除该数据后，数据库中存储的表和数据一同被删除，而且不能恢复。</p>
+</blockquote>
+<h3 id="22各种引擎的选择">2.2各种引擎的选择</h3>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/helen1234/picgo/raw/master/20200522204448.png" alt="" loading="lazy"></figure>
+<ol>
+<li>如果要提供提交，回滚，崩溃恢复能力的事务安全（ACID）能力，并要求实现并发控制，innoDB 是个很好的选择。</li>
+<li>如果只是用来存储插入和查询记录，MyISAM引擎能提供较高的处理效率。</li>
+<li>如果只有INSERT和SELECT操作，可以选择Archive引擎，该引擎支持高并发的插入操作，但是本身并不是事务安全的。它非常适合存储归档数据。记录日志信息可以使用该引擎。</li>
+</ol>
+<p><strong>总结：</strong> 使用哪一种引擎要根据需求灵活选择，一个数据库中多个表可以使用不同的引擎，来满足各种性能和实际需求。使用合适的存储引擎，将会提高整个数据库的性能。</p>
+<blockquote>
+<p>如果查看当前的默认存储引擎？</p>
+<p>使用如下的SQL：</p>
+<pre><code class="language-mysql">SHOW VARIABLES LIKE '%storage_engine%'
+</code></pre>
+</blockquote>
+<img src="https://gitee.com/helen1234/picgo/raw/master/20200522205728.png" style="zoom:80%;" />
+<h1 id="3数据库表的基本操作">3.数据库表的基本操作</h1>
+<blockquote>
+<p>在创建完数据库之后，接下来的工作就是创建数据库表了，所谓的创建数据库表，指的是在已经创建好的数据库中建立新表，创建数据库表的过程就是规定数据列的属性的过程。同时也是实施数据完整性（包括实体完整性，引用完整性，引用完整性，域完整性）约束过程。</p>
+</blockquote>
+<h3 id="31-创建数据表的基本语法">3.1 创建数据表的基本语法：</h3>
+<pre><code class="language-mysql">CREATE TABLE (
+	字段名1 数据类型[列级别的约束条件][默认值],
+    字段名2 数据类型[列级别的约束条件][默认值],
+    字段名3 数据类型[列级别的约束条件][默认值],
+    字段名4 数据类型[列级别的约束条件][默认值],
+    ...
+    表级别的约束
+);
+</code></pre>
+<h5 id="需要注意的地方">需要注意的地方：</h5>
+<ol>
+<li>要创建的表的名称，不区分大小写，不能使用SQL关键字 例如：<code>DROP</code>,<code>ALTER</code>，<code>INSERT</code></li>
+<li>数据表中每一个列的名称和数据类型，如果创建多个列，要用逗号隔开。</li>
+</ol>
+<h3 id="32-多字段联合主键">3.2 多字段联合主键</h3>
+<p>语法如下：</p>
+<pre><code class="language-mysql">PRIMARY KEY [字段1,字段2..字段n]
+</code></pre>
+<p>**例如：**为了唯一确定一个员工，可以把<code>name</code>,<code>deptId</code>,联合起来作为主键，SQL语法如下：</p>
+<pre><code class="language-mysql">CREATE TABLE emp(
+	`name` VARCHAR(25),
+	deptId INT(11),
+	salary FLOAT,
+	PRIMARY KEY(`name`,deptId)
+)
+</code></pre>
+<h1 id="4mysql的函数">4.MySQL的函数</h1>
+<ol>
+<li>绝对值ABS：</li>
+</ol>
+<pre><code class="language-mysql">1. SELECT ABS(-1) FROM DUAL;
+</code></pre>
+<ol start="2">
+<li>π的值PI()：</li>
+</ol>
+<pre><code class="language-mysql">SELECT PI();
+</code></pre>
+<ol start="3">
+<li>平方根函数SQRT</li>
+</ol>
+<pre><code class="language-mysql">SELECT SQRT(9);
+#如果是负数，则返回NULL;
+</code></pre>
+<ol start="4">
+<li>求余数MOD:</li>
+</ol>
+<pre><code class="language-mysql">SELECT MOD(15,14);
+#求15对14的余数。对小数部分数值也起作用
+</code></pre>
+<h1 id="mysql的基本架构示意图">MySQL的基本架构示意图：</h1>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
+<li><a href="#mysql%E7%AC%94%E8%AE%B0">MYSQL笔记</a></li>
+<li><a href="#1-%E5%88%9D%E5%A7%8B">1 初始</a><br>
+*
 <ul>
-<li><a href="#%E7%89%B9%E6%80%A7">特性👇</a></li>
+<li><a href="#11-%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93database">1.1 什么是数据库（DataBase）</a></li>
+<li><a href="#12-%E8%A1%A8">1.2 表</a></li>
+<li><a href="#13-sql%E8%AF%AD%E8%A8%80%E7%9A%844%E4%B8%AA%E9%83%A8%E5%88%86">1.3 SQL语言的4个部分</a>
+<ul>
+<li><a href="#%E4%BE%8B%E5%A6%82%E7%94%A8sql%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAstudent%E8%A1%A8">例如：用SQL创建一个student表</a></li>
+<li><a href="#%E4%B8%8B%E9%9D%A2%E6%9D%A5%E6%8F%92%E5%85%A5%E4%B8%80%E6%9D%A1%E6%95%B0%E6%8D%AE">下面来插入一条数据：</a></li>
+<li><a href="#%E6%9F%A5%E6%89%BE%E6%95%B0%E6%8D%AE">查找数据：</a></li>
 </ul>
 </li>
+<li></li>
+</ul>
+</li>
+<li><a href="#2mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">2.MySQL数据库的基本操作</a><br>
+*<br>
+*<br>
+* <a href="#21%E6%95%B0%E6%8D%AE%E5%BA%93">2.1数据库</a>
+<ul>
+<li><a href="#22%E5%90%84%E7%A7%8D%E5%BC%95%E6%93%8E%E7%9A%84%E9%80%89%E6%8B%A9">2.2各种引擎的选择</a></li>
+</ul>
+</li>
+<li><a href="#3%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">3.数据库表的基本操作</a><br>
+*
+<ul>
+<li><a href="#31-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">3.1 创建数据表的基本语法：</a><br>
+*
+<ul>
+<li><a href="#%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%9C%B0%E6%96%B9">需要注意的地方：</a></li>
+</ul>
+</li>
+<li><a href="#32-%E5%A4%9A%E5%AD%97%E6%AE%B5%E8%81%94%E5%90%88%E4%B8%BB%E9%94%AE">3.2 多字段联合主键</a></li>
+</ul>
+</li>
+<li><a href="#4mysql%E7%9A%84%E5%87%BD%E6%95%B0">4.MySQL的函数</a></li>
+<li><a href="#mysql%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%E7%A4%BA%E6%84%8F%E5%9B%BE">MySQL的基本架构示意图：</a></li>
 </ul>
 
               </div>
