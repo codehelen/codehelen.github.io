@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://codehelen.github.io</id>
     <title>CodeHelen&apos;s Blog</title>
-    <updated>2020-07-06T05:41:35.939Z</updated>
+    <updated>2020-07-06T05:42:57.299Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://codehelen.github.io"/>
     <link rel="self" href="http://codehelen.github.io/atom.xml"/>
@@ -24,7 +24,7 @@
 </blockquote>
 <h2 id="2jrebel的安装和crack">2.<code>JRebel</code>的安装和<code>crack</code></h2>
 <h3 id="21-在idea下载jrebel插件">2.1 在IDEA下载<code>JRebel</code>插件：</h3>
-<h3 id="img-srchttpsgiteecomhelen1234picgorawmasterimage-20200706130205259png-altimage-20200706130205259-stylezoom-50"><img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706130205259.png" alt="image-20200706130205259" style="zoom: 50%;" /></h3>
+<img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706130205259.png" alt="image-20200706130205259" style="zoom: 50%;" />
 <p>安装后重启</p>
 <h3 id="22jrebel的激活">2.2<code>JRebel</code>的激活</h3>
 <img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706131537127.png" alt="image-20200706131537127" style="zoom:50%;" />
