@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://codehelen.github.io</id>
     <title>CodeHelen&apos;s Blog</title>
-    <updated>2020-07-06T05:40:49.692Z</updated>
+    <updated>2020-07-06T05:41:35.939Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://codehelen.github.io"/>
     <link rel="self" href="http://codehelen.github.io/atom.xml"/>
-    <subtitle>&lt;a  target=&quot;_blank&quot; ref=&quot;http://codehelen.top&quot;&gt;To live is to toss&lt;/a&gt;</subtitle>
+    <subtitle>To live is to toss</subtitle>
     <logo>http://codehelen.github.io/images/avatar.png</logo>
     <icon>http://codehelen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CodeHelen&apos;s Blog</rights>
