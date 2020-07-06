@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://codehelen.github.io</id>
     <title>CodeHelen&apos;s Blog</title>
-    <updated>2020-06-23T05:51:26.296Z</updated>
+    <updated>2020-07-06T05:40:49.692Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://codehelen.github.io"/>
     <link rel="self" href="http://codehelen.github.io/atom.xml"/>
@@ -10,6 +10,58 @@
     <logo>http://codehelen.github.io/images/avatar.png</logo>
     <icon>http://codehelen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, CodeHelen&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[JRebel热部署插件的使用]]></title>
+        <id>http://codehelen.github.io/post/jrebel/</id>
+        <link href="http://codehelen.github.io/post/jrebel/">
+        </link>
+        <updated>2020-07-06T03:38:11.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1why-jrebel">1.WHY <code>JRebel</code>?</h2>
+<p>在和前端联调的过程中，总是会发现在写<code>BUG</code>的过程中总是会有漏写的<code>BUG</code>，每次改动后还需要重启<code>Tomcat</code>，简直是大大的浪费时间和生命。此时，热部署就很好地解决这个问题；</p>
+<h2 id="2jrebel简介">2.<code>JRebel</code>简介：</h2>
+<blockquote>
+<p>JRebel是一个与应用服务器集成的JVM Java代理，使类可以用现有的类加载器重新加载。只有更改后的类才会重新编译并立即在运行的应用程序中重新加载。使用JRebel，您无需等待构建和重新部署来更改代码。只需编写代码并刷新浏览器即可。</p>
+</blockquote>
+<h2 id="2jrebel的安装和crack">2.<code>JRebel</code>的安装和<code>crack</code></h2>
+<h3 id="21-在idea下载jrebel插件">2.1 在IDEA下载<code>JRebel</code>插件：</h3>
+<h3 id="img-srchttpsgiteecomhelen1234picgorawmasterimage-20200706130205259png-altimage-20200706130205259-stylezoom-50"><img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706130205259.png" alt="image-20200706130205259" style="zoom: 50%;" /></h3>
+<p>安装后重启</p>
+<h3 id="22jrebel的激活">2.2<code>JRebel</code>的激活</h3>
+<img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706131537127.png" alt="image-20200706131537127" style="zoom:50%;" />
+<ol>
+<li>在<code>File</code>&gt;<code>JRebel&amp;XRebel</code>&gt;<code>Change License</code>页面</li>
+<li><a href="https://www.guidgen.com/">获取GUIDs</a></li>
+<li>服务器地址格式：<code>https://jrebel.qekang.com/{GUID}</code></li>
+<li>邮箱任意</li>
+<li>点击<code>Change license</code>激活</li>
+</ol>
+<h3 id="23-jrebel的配置">2.3 <code>JRebel</code>的配置</h3>
+<ol>
+<li>
+<p>选择你的项目：在<code>JRebel</code>的<code>Panel</code>里打钩：</p>
+<img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706132313258.png" alt="image-20200706132313258" style="zoom:50%;" />
+</li>
+</ol>
+<img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706132504405.png" alt="image-20200706132504405" style="zoom:50%;" />
+<p>2.解决无法进入断点问题：</p>
+<ol>
+<li>在<code>Tomcat</code>里复制DEBUG下的<code>JAVA_OPTS</code>的<code>value</code></li>
+</ol>
+<img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706132615734.png" alt="image-20200706132615734" style="zoom:50%;" />
+<ol start="2">
+<li>
+<p>整理<code>value</code> 去除<code>\</code>等转义字符，在<code>JRebel Debug</code>里新增一个<code>JAVA_OPTS</code>，将刚才格式化的value粘贴（一定要先去除字符，顺便把端口改好，在粘贴）</p>
+<img src="C:\Users\ZM\AppData\Roaming\Typora\typora-user-images\image-20200706133001974.png" alt="image-20200706133001974" style="zoom:67%;" />
+</li>
+</ol>
+<p>3.此时，可以以<code>DEBUG</code>模式启动你的项目了：</p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/helen1234/picgo/raw/master/image-20200706133225156.png" alt="image-20200706133225156" loading="lazy"></figure>
+<h3 id="3常用的操作">3.常用的操作：</h3>
+<ol>
+<li>当修改Java文件时，快捷键： <code>ctrl</code> + <code>shift</code> + <code>F9</code>,进行热部署</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[MySQL随手记]]></title>
         <id>http://codehelen.github.io/post/mysql-sui-shou-ji/</id>
